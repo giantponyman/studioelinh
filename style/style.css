@@ -192,3 +192,9 @@ font-size:.8em;}
 }
 
 img.documentation {width:100%;}
+
+hr {
+width: 100%;
+height: 5px;
+background-color:grey;
+}
