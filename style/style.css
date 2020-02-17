@@ -52,6 +52,7 @@ div.stuff{
   clear:left;
   float:left;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .flex-pics {
 	width:40%;
@@ -60,6 +61,7 @@ div.stuff{
   clear:right;
   float:right;
   padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 
