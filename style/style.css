@@ -6,17 +6,44 @@ body {
   margin:20px;
 }
 
+body.techno { 
+  background-color: white;
+  animation-opacity: 50%;
+  animation-name: techno;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+  font-size: 100%;
+  margin:20px;}
+
+  @keyframes techno{
+  0%   {background-color: green;}
+  33%  {background-color: powderblue;}
+  66%  {background-color: grey;}
+  100%  {background-color: yellow;}
+}
+
+
+
 .nameposition {
 	float:left;
   height: 160px;
   width: 100px;
   position: relative;
   background-color: red;
-  animation-name: name;
-  animation-duration: 60s;
+  animation-name: index;
+  animation-duration: 45s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
   animation-timing-function: linear;
+}
+
+@keyframes index {
+  0%   {background-color: green;}
+  33%  {background-color: powderblue;}
+  66%  {background-color: grey;}
+  100%  {background-color: yellow;}
 }
 
 nav ul {
@@ -31,11 +58,20 @@ nav ul {
 
   position: absolute;
   background-color: red;
-  animation-name: index;
-  animation-duration: 45s;
+  animation-name: name;
+  animation-duration: 60s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
   animation-timing-function: linear
+}
+
+@keyframes name {
+  0%   {background-color: yellow;}
+  20%  {background-color: white;}
+  40%  {background-color: green;}
+  60%   {background-color: grey;}
+  80%  {background-color: pink;}
+  100%  {background-color: green;}
 }
 
 div.stuff{
@@ -181,21 +217,7 @@ a.thing:active {
 
 a.norm{font-size: .8em}
 
-@keyframes name {
-  0%   {background-color: yellow;}
-  20%  {background-color: white;}
-  40%  {background-color: green;}
-  60%   {background-color: grey;}
-  80%  {background-color: pink;}
-  100%  {background-color: green;}
-}
 
-@keyframes index {
-  0%   {background-color: green;}
-  33%  {background-color: powderblue;}
-  66%  {background-color: grey;}
-  100%  {background-color: yellow;}
-}
 
   @keyframes link {
  0%   {background-color: yellow;}
@@ -223,3 +245,15 @@ img.zoom:hover {
     -webkit-transform:scale(1.6); /* or some other value */
     transform:scale(1.6)skewY(2deg);;
 }
+
+
+
+@keyframes wobble {
+  0% {height:450px; width:300px;}
+  10% {height:450px; width:300px;}
+  100% {height:8000px; width:300px;}
+}
+
+.notbold{
+    font-weight:normal
+}​
