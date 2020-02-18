@@ -118,6 +118,16 @@ div.stuff{
   padding-bottom: 30px;
 }
 
+.license {
+  position:relative;
+float:right;
+clear:both;
+bottom:0px;
+padding-top: 300px;
+padding-bottom:10px;
+font-size:.6em;
+font-family: sans-serif;
+}
 
 /*Index name*/
 h1 {
@@ -178,6 +188,7 @@ p.three{
 	font-family: sans-serif;
 	font-size:.8em;
 	}
+
 
 /*Nav links*/
 a.one:link {
@@ -271,3 +282,4 @@ img.zoom:hover {
 .notbold{
     font-weight:normal
 }​
+
