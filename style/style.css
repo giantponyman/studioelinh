@@ -14,8 +14,8 @@ body.techno {
   -webkit-animation-name: techno;
 
           animation-name: techno;
-  -webkit-animation-duration: .6s;
-          animation-duration: .6s;
+  -webkit-animation-duration: .45s;
+          animation-duration: .45s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
