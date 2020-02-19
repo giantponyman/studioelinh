@@ -195,24 +195,26 @@ a.one:link {
 	font-size:1em;
 	color:white;
   text-decoration: none;
+  font-family:serif;
 }
 
 a.one:visited {
 	font-size:1em;
 	color:white;
   text-decoration: none;
+  font-family:serif;
 }
 
 a.one:hover {
 	font-size:1em;
 	color:black;
-  text-decoration: ;
+  font-family:serif;
 }
 
 a.one:active {
 	font-size:1em;
 	color:black;
-  text-decoration:;
+   font-family:serif;
 }
 
 /*Things links*/
