@@ -132,6 +132,7 @@ font-family: sans-serif;
 /*Index name*/
 h1 {
   color: white;
+   font-family:serif;
   font-size:1em;
   font-weight: normal;
   padding: 0px 8px;
