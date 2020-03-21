@@ -38,9 +38,10 @@ body.techno {
 
 .nameposition {
   float:left;
-  height: 160px;
-  width: 100px;
-  position: relative;
+  height: 40px;
+  width: 90px;
+  padding-left:2px;
+  position: absolute;
   background-color: red;
   -webkit-animation-name: index;
           animation-name: index;
@@ -48,7 +49,7 @@ body.techno {
           animation-duration: 45s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
+  animation-direction: alternate;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
 }
@@ -65,12 +66,12 @@ nav ul {
     margin: 0;
    border: none;
     display: inline-block;
-    height:150px;
-    width:92px;
-    padding-top: 10px;
-    padding-left:8px;
-
-  position: absolute;
+    height:120px;
+    width:82px;
+    padding-top: 50px;
+    padding-left:10px;
+float:left;
+clear:left;
   background-color: red;
   -webkit-animation-name: name;
           animation-name: name;
@@ -85,36 +86,37 @@ nav ul {
 
 @keyframes name {
   0%   {background-color: yellow;}
-  20%  {background-color: white;}
+  20%  {background-color: pink;}
   40%  {background-color: green;}
   60%   {background-color: grey;}
-  80%  {background-color: pink;}
+  80%  {background-color: white;}
   100%  {background-color: green;}
 }
 
-div.stuff{
+.stuff{
 	display:flex;
 	flex-direction:column;
-	float:right; width:40%;padding-top: 0px;
-  padding-bottom:10px;
+	float:left; width:80%;
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 5px;
+  padding-left:30px
+;
 }
 
 .flex-text {
-	width:55%;
+	width:40%;
   display: flexbox;
-  flex-direction:row ;
-  clear:left;
+  flex-direction:column; ;
   float:left;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-left:30px;
 }
 .flex-pics {
 	width:40%;
   display: flexbox;
-  flex-direction:row ;
-  clear:right;
+  flex-direction:column;
   float:right;
-  padding-top: 10px;
+  padding-top: 0px;
   padding-bottom: 30px;
 }
 
@@ -123,7 +125,7 @@ div.stuff{
 float:right;
 clear:both;
 bottom:0px;
-padding-top: 300px;
+padding-top: 60%;
 padding-bottom:10px;
 font-size:.6em;
 font-family: sans-serif;
@@ -148,7 +150,8 @@ h2 {font-family: sans-serif;
 
 p {
 	font-family: sans-serif;
-font-size:.8em}
+font-size:.8em;
+}
 
 
 /*Navigation list formating*/
@@ -168,14 +171,14 @@ ul.heading {font-family: sans-serif; list-style-type: none; padding: 0;
 /*Past shows list formating*/
 
 ul.past {font-family: sans-serif; font-size: .8em; list-style-type: none; padding: 0;
-  margin-left:0; margin-top: 0;;
+  margin-left:0; margin-top: 0px;
   }
 
 li.past {font-size:.8em;}
 
 /*Main-text*/
 p.one {
-	font-size:.8em; font-weight:normal;  text-decoration: none;
+	font-size:.8em; font-weight:normal;  text-decoration: none; margin-top:0px;
 }
 
 /*Sub-text*/
