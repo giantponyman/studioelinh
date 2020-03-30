@@ -14,8 +14,8 @@ body.techno {
   -webkit-animation-name: techno;
 
           animation-name: techno;
-  -webkit-animation-duration: .45s;
-          animation-duration: .45s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
@@ -23,9 +23,19 @@ body.techno {
           animation-timing-function: linear;
 }
   @keyframes techno{
-  0%   {background-color: green;}
-  33%  {background-color: powderblue;}
-  66%  {background-color: grey;}
+  0%  {background-color: grey;}
+  10%  {background-color: yellow;}
+    15%  {background-color: grey;}
+  20%  {background-color: yellow;}
+    25%  {background-color: white;}
+  40%  {background-color: yellow;}
+    50%  {background-color: white;}
+  55%  {background-color: yellow;}
+   60%  {background-color: grey;}
+  70%  {background-color: yellow;}
+    80%  {background-color: white;}
+  85%  {background-color: yellow;}
+    95%  {background-color: grey;}
   100%  {background-color: yellow;}
 }
 
