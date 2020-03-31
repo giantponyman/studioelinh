@@ -23,18 +23,18 @@ body.techno {
           animation-timing-function: linear;
 }
   @keyframes techno{
-  0%  {background-color: grey;}
+  0%  {background-color: white;}
   5%  {background-color: yellow;}
-    15%  {background-color: grey;}
-    16%  {background-color: black;}
-  20%  {background-color: yellow;}
-    30%  {background-color: white;}
-  40%  {background-color: yellow;}
-    50%  {background-color: white;}
-  55%  {background-color: yellow;}
-  65% {background-color: grey;}
-   68%  {background-color: red;}
-  70%  {background-color: yellow;}
+    15%  {background-color: white;}
+    20%  {background-color: grey;}
+  25%  {background-color: white;}
+    30%  {background-color: yellow;}
+  35%  {background-color: white;}
+    45%  {background-color: yellow;}
+  55%  {background-color: grey;}
+  65% {background-color: yellow;}
+   70%  {background-color: white;}
+  75%  {background-color: yellow;}
     80%  {background-color: white;}
   85%  {background-color: yellow;}
     95%  {background-color: grey;}
