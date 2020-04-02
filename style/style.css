@@ -423,6 +423,7 @@ img.zoom:hover {
   color: #ccc;
   padding: 10px 0;
   height: 150px;
+  font-family: sans-serif;
 }
 
 /* Add Animation - Zoom in the Modal */
