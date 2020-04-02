@@ -57,8 +57,6 @@ body.techno {
   z-index:1;
 }
 .nameposition {
-  position: fixed;
-  z-index: 10;
   height: 40px;
   width: 90px;
   padding-left:2px;
