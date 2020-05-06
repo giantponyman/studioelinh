@@ -28,7 +28,7 @@
 		<li><b>Playing Music</b></li>
 		<li>Audio files, self-released (ongoing)</li>
 	</ul>
-		<p>This is an ongoing series of recordings culled from my archive. For each release I pull together two or three recordings from my archive.
+		<p>This is an ongoing series of recordings culled from my archive. For each release I pull together and abut two or three recordings.
 		<p>I think of each release as a single piece, composed in two stages: first in the moment of recording (i.e. real-time composition) and then later, when I juxtapose audio segments as individual "tracks".
 		<p>
 	
@@ -36,44 +36,20 @@
 </div>
 
 <div class="flex-pics">
-	<!-- Trigger the Modal -->
-<img id="myImg" src="Playing Music 2 art.jpg" alt="Playing Music 2" style="width:100%;">
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+<img src="Playing Music 2 art.jpg" alt="Playing Music 2" style="width:100%;">
 
-  <!-- The Close Button -->
-  <span class="close">&times;</span>
 
-  <!-- Modal Content (The Image) -->
-  <img class="modal-content" id="img01">
-
-  <!-- Modal Caption (Image Text) -->
-  <div id="caption"></div>
-</div>
-
-<audio controls autoplay src="Playing Music 2 - 01 The Wind in the Room at Ticehurst.mp3">
+<audio controls src="Playing Music 2 - 01 The Wind in the Room at Ticehurst.mp3">
 <div style="border: 1px solid black ; padding: 8px ;">
 Sorry, your browser does not support the <audio> tag used in this demo.
 </div>
 </audio>
 <p>"The Wind in the Room at Ticehurst" from <a href="https://elinh.bandcamp.com/album/playing-music-2" target="_blank"> <i>Playing Music 2</i></a> (2020)</li></p>
 
-	<!-- Trigger the Modal -->
-<img id="myImg" src="Playing Music 1 art.jpg" alt="Playing Music 1" style="width:100%;">
+<img src="Playing Music 1 art.jpg" alt="Playing Music 1" style="width:100%;">
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
 
-  <!-- The Close Button -->
-  <span class="close">&times;</span>
-
-  <!-- Modal Content (The Image) -->
-  <img class="modal-content" id="img01">
-
-  <!-- Modal Caption (Image Text) -->
-  <div id="caption"></div>
-</div>
 
 <audio controls autoplay src="Playing Music 1 - 01 Bell Nook, Scrape.mp3">
 <div style="border: 1px solid black ; padding: 8px ;">
@@ -88,28 +64,5 @@ Sorry, your browser does not support the <audio> tag used in this demo.
 <div class="license">
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; opacity:50%" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>.
 </div>
-
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-</script>
 
 </html>
