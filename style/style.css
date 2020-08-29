@@ -23,7 +23,7 @@ body.techno {
 }
 
 p.secrettext {
-  color:white;
+  color:black;
   -webkit-animation-name: secrettext;
 
           animation-name: secrettext;
