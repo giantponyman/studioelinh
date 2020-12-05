@@ -77,7 +77,7 @@ p.secrettext {
 }
 .nameposition {
   height: 40px;
-  width: 90px;
+  width: 100px;
   padding-left:2px;
   position: absolute;
   background-color: red;
@@ -104,7 +104,7 @@ nav ul {
    border: none;
     display: inline-block;
     height:125px;
-    width:82px;
+    width:92px;
     padding-top: 50px;
     padding-left:10px;
 float:left;
@@ -137,7 +137,7 @@ clear:left;
   padding-top: 0;
   margin-top: 0;
   padding-bottom: 5px;
-  padding-left:30px
+  padding-left:40px
 ;
 }
 
@@ -155,7 +155,7 @@ clear:left;
   display: flexbox;
   flex-direction:column; ;
   float:left;
-  padding-left:30px;
+  padding-left:40px;
   padding-top: 0px;
 }
 .flex-pics {
