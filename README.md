@@ -1,1 +1,2 @@
-# studioelinh.github.io
+#studio eli neuman-hammond
+personal website
