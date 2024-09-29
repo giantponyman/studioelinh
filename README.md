@@ -1,2 +1,2 @@
 # studio eli neuman-hammond
-personal website
+elineumanhammond.net
