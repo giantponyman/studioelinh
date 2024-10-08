@@ -15,14 +15,17 @@
   flex-flow: row wrap;
 }
 
+/* || screen responsive */
+
 /* || information*/
 .info-div { 
   order: 0;
-  max-width: 40em;
+  max-width: 30%;
   top: .5em; /* this is required for "sticky" to work */
   position: sticky;
   postion: -webkit-sticky;
   align-self: flex-start;
+  margin-bottom: .5em;
 }
 
 @media (max-width: 760px) {
@@ -37,18 +40,20 @@
   }
   .info-div{ 
   order: 0;
-  max-width: 40em;
+  max-width: 100%;
   position:relative;
+  }
+  .projects-div{
+  order: 1;
+  min-width: 100%;
   }
  }
 
  @media (min-width: 760px) {
-  .about{
-    font-size: 1.5em;
-  }
   .title{
-    font-size: 3em;
+    font-size: 2em;
   }
+
  }
 
 
@@ -116,7 +121,7 @@
  
 .projects-div {
   order: 1;
-  max-width: 50em;
+  max-width: 50%;
 }
 
 details {
