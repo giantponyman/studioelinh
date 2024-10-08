@@ -7,7 +7,7 @@
 
 /* || images */
 .documentation {
-  max-width:100%;
+  max-width:90%;
 }
 
 .container {
@@ -25,19 +25,24 @@
   align-self: flex-start;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 760px) {
   .about{
     font-size: 1em;
   }
   .title{
-    font-size: 1em;
+    font-size: 1.5em;
   }
   .contact{
   font-size: 1em;
   }
+  .info-div{ 
+  order: 0;
+  max-width: 40em;
+  position:relative;
+  }
  }
 
- @media (min-width: 680px) {
+ @media (min-width: 760px) {
   .about{
     font-size: 1.5em;
   }
