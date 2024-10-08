@@ -25,11 +25,32 @@
   align-self: flex-start;
 }
 
+@media (max-width: 680px) {
+  .about{
+    font-size: .5em;
+  }
+  .title{
+    font-size: 1em;
+  }
+  .contact{
+  font-size: 1em;
+  }
+ }
+
+ @media (min-width: 680px) {
+  .about{
+    font-size: 1.5em;
+  }
+  .title{
+    font-size: 3em;
+  }
+ }
+
+
 .title {
   color: white;
   margin: 0em;
   padding: .2em;
-  font-size: 5vh;
   -webkit-animation-name: title;
   animation-name: title;
   -webkit-animation-duration: 45s;
@@ -62,6 +83,7 @@
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear
 }
+ 
 
  @keyframes about{
   0%   {background-color: green;}
