@@ -92,7 +92,7 @@ details {
   padding: 0.5em 0.5em 0;
   margin:.75em;
   width:fit-content; 
-  max-width: 45em;
+  max-width: 40em;
 }
 
 summary {
@@ -105,11 +105,11 @@ summary {
 details[open] {
   padding: 0.5em;
   width:fit-content; 
-  max-width: 45em;
+  max-width: 40em;
 }
 
 details[open] summary {
   margin-bottom: 0.5em;
-  max-width: 45em;
+  max-width: 40em;
   background-color: yellow;
 }
