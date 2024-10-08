@@ -27,7 +27,7 @@
 
 @media (max-width: 680px) {
   .about{
-    font-size: .5em;
+    font-size: 1em;
   }
   .title{
     font-size: 1em;
@@ -50,7 +50,7 @@
 .title {
   color: white;
   margin: 0em;
-  padding: .2em;
+  padding: .5em;
   -webkit-animation-name: title;
   animation-name: title;
   -webkit-animation-duration: 45s;
