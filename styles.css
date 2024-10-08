@@ -11,17 +11,20 @@
 }
 
 /* || projects */
-
+body::-webkit-scrollbar {
+    width: 0em;
+}
+ 
 .projects {
   float:left;
-  margin-top:em;
+  margin-right:5em;
 }
 details {
   border: 1px solid black;
   padding: 0.5em 0.5em 0;
-  margin:1em;
+  margin:.75em;
   width:fit-content; 
-  max-width: 40em;
+  max-width: 45em;
 }
 
 summary {
@@ -45,8 +48,9 @@ details[open] summary {
 
 /* || information*/
 .info-div {  
-  float:right;
+  float:left;
   max-width: 40em;
+  margin-top: .5em;
 }
 
 .title {
@@ -97,7 +101,7 @@ details[open] summary {
 .contact {
   color: white;
   margin: 0em;
-  margin-bottom: 30em;
+  margin-bottom: 40em;
   padding: .5em;
   -webkit-animation-name: about;
   animation-name: about;
