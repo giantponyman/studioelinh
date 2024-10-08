@@ -10,14 +10,20 @@
   width:400px;
 }
 
+.container {
+  display: flex;
+  flex-flow: row wrap;
+
+}
+}
 /* || projects */
 body::-webkit-scrollbar {
     width: 0em;
 }
  
 .projects-div {
-  float:left;
-  margin-right:5em;
+  order: 1;
+
 }
 details {
   border: 1px solid black;
@@ -47,10 +53,9 @@ details[open] summary {
 }
 
 /* || information*/
-.info-div {  
-  float:left;
+.info-div { 
+  order: 0;
   max-width: 40em;
-  margin-top: .5em;
 }
 
 .title {
@@ -101,7 +106,6 @@ details[open] summary {
 .contact {
   color: white;
   margin: 0em;
-  margin-bottom: 40em;
   padding: .5em;
   -webkit-animation-name: about;
   animation-name: about;
