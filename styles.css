@@ -29,7 +29,7 @@
   color: white;
   margin: 0em;
   padding: .2em;
-  font-size:3em;
+  font-size: 5vh;
   -webkit-animation-name: title;
   animation-name: title;
   -webkit-animation-duration: 45s;
