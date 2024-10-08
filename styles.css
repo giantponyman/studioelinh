@@ -1,0 +1,111 @@
+/* || typography */
+.subheading {
+  font-family:sans-serif;
+  font-weight: bold;
+  margin: 0em;
+}
+
+/* || images */
+.banner {
+  max-width: 50%;
+}
+
+/* || projects */
+
+.projects {
+  float:left;
+  margin-top:em;
+}
+details {
+  border: 1px solid black;
+  padding: 0.5em 0.5em 0;
+  margin:1em;
+  width:fit-content; 
+  max-width: 40em;
+}
+
+summary {
+ font-family:sans-serif;
+ font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+  width:fit-content; 
+  max-width: 45em;
+}
+
+details[open] summary {
+  margin-bottom: 0.5em;
+  max-width: 45em;
+  background-color: yellow;
+}
+
+/* || information*/
+.info-div {  
+  float:right;
+  max-width: 40em;
+}
+
+.title {
+  color: white;
+  margin: 0em;
+  padding: .2em;
+  font-size:3em;
+  -webkit-animation-name: title;
+  animation-name: title;
+  -webkit-animation-duration: 45s;
+  animation-duration: 45s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+ @keyframes title{
+  0%   {background-color: green;}
+  33%  {background-color: powderblue;}
+  66%  {background-color: grey;}
+  100%  {background-color: seashell;}
+}
+
+.about {
+  color: white;
+  margin: 0em;
+  padding: .5em;
+  -webkit-animation-name: about;
+  animation-name: about;
+  -webkit-animation-duration: 55s;
+  animation-duration: 55s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear
+}
+
+ @keyframes about{
+  0%   {background-color: green;}
+  33%  {background-color: powderblue;}
+  66%  {background-color: saddlebrown;}
+  100%  {background-color: seashell;}
+}
+
+.contact {
+  color: white;
+  margin: 0em;
+  margin-bottom: 30em;
+  padding: .5em;
+  -webkit-animation-name: about;
+  animation-name: about;
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear
+}
