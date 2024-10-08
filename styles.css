@@ -18,7 +18,11 @@
 /* || information*/
 .info-div { 
   order: 0;
-  max-width: 43em;
+  max-width: 40em;
+  top: .5em; /* this is required for "sticky" to work */
+  position: sticky;
+  postion: -webkit-sticky;
+  align-self: flex-start;
 }
 
 .title {
@@ -85,14 +89,14 @@
  
 .projects-div {
   order: 1;
-
+  max-width: 50em;
 }
+
 details {
   border: 1px solid black;
   padding: 0.5em 0.5em 0;
   margin:.75em;
   width:fit-content; 
-  max-width: 40em;
 }
 
 summary {
@@ -105,11 +109,9 @@ summary {
 details[open] {
   padding: 0.5em;
   width:fit-content; 
-  max-width: 40em;
 }
 
 details[open] summary {
   margin-bottom: 0.5em;
-  max-width: 40em;
   background-color: yellow;
 }
