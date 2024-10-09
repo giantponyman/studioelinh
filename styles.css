@@ -5,21 +5,19 @@
   flex-flow: row wrap;
 }
 
+/* || scrollbar */
 ::-webkit-scrollbar{
   width: .5em;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #ffffff;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #555;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #fff200;}
 
@@ -33,7 +31,7 @@
 /* || images */
 .documentation {
   max-width: 99%;
-
+  max-height: 70vh;
   margin-left: 0.2em;
   margin-right: 0.5em;
   overflow-x: auto;
