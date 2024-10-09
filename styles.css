@@ -33,7 +33,7 @@
 /* || images */
 .documentation {
   max-width: 99%;
-  max-height: 68vh;
+
   margin-left: 0.2em;
   margin-right: 0.5em;
   overflow-x: auto;
@@ -41,7 +41,7 @@
 .scroll {
   overflow-x: auto;
   white-space: nowrap;
-  height: 72vh;
+
 }
 
 /* || information*/
