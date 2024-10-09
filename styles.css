@@ -158,3 +158,8 @@ details[open] summary {
   margin-bottom: 0.5em;
   background-color: yellow;
 }
+
+.description {
+    font-family:monospace;
+    margin-bottom: 2em;
+}
