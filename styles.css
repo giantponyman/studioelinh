@@ -7,7 +7,7 @@
 
 /* || scrollbar */
 ::-webkit-scrollbar {
-  width: .5em;
+  width: 0em;
   height: .5em;
 }
 
@@ -16,8 +16,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: white;
-    outline: 2px solid grey;
+  background: lightgrey;
 }
 
 ::-webkit-scrollbar-thumb:hover {
