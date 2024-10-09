@@ -6,8 +6,9 @@
 }
 
 /* || scrollbar */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: .5em;
+  height: .5em;
 }
 
 ::-webkit-scrollbar-track {
@@ -15,11 +16,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #555;
+  background: white;
+    outline: 2px solid grey;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #fff200;}
+  background: yellow;}
 
 /* || typography */
 .subheading {
@@ -183,7 +185,7 @@ details[open] {
 
 details[open] summary {
   margin-bottom: 0.5em;
-  background-color: yellow;
+  background-color: yellow
 }
 
 .description {
