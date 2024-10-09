@@ -1,4 +1,3 @@
-
 /* || general */
 
 .body {
@@ -6,72 +5,87 @@
   flex-flow: row wrap;
 }
 
+::-webkit-scrollbar{
+  width: .5em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff200;}
+
 /* || typography */
 .subheading {
-  font-family:sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
   margin: 0em;
 }
 
 /* || images */
 .documentation {
-  max-width:100%;
-  max-height:58vh;
-  margin-left:.5em;
-  margin-right:.5em;
+  max-width: 99%;
+  max-height: 68vh;
+  margin-left: 0.2em;
+  margin-right: 0.5em;
   overflow-x: auto;
 }
 .scroll {
-    overflow-x: auto;
-    white-space: nowrap;
-    height:62vh;
+  overflow-x: auto;
+  white-space: nowrap;
+  height: 72vh;
 }
 
-
 /* || information*/
-.info-div { 
+.info-div {
   order: 0;
   max-width: 30%;
-  top: .5em; /* this is required for "sticky" to work */
+  top: 0.5em; /* this is required for "sticky" to work */
   position: sticky;
   postion: -webkit-sticky;
   align-self: flex-start;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 @media (max-width: 760px) {
-  .about{
+  .about {
     font-size: 1em;
   }
-  .title{
+  .title {
     font-size: 1.5em;
   }
-  .contact{
-  font-size: 1em;
+  .contact {
+    font-size: 1em;
   }
-  .info-div{ 
-  order: 0;
-  max-width: 100%;
-  position:relative;
+  .info-div {
+    order: 0;
+    max-width: 100%;
+    position: relative;
   }
-  .projects-div{
-  order: 1;
-  min-width: 100%;
+  .projects-div {
+    order: 1;
+    min-width: 100%;
   }
- }
+}
 
- @media (min-width: 760px) {
-  .title{
+@media (min-width: 760px) {
+  .title {
     font-size: 2em;
   }
-
- }
-
+}
 
 .title {
   color: white;
   margin: 0em;
-  padding: .5em;
+  padding: 0.5em;
   -webkit-animation-name: title;
   animation-name: title;
   -webkit-animation-duration: 45s;
@@ -83,17 +97,25 @@
   animation-timing-function: linear;
 }
 
- @keyframes title{
-  0%   {background-color: green;}
-  33%  {background-color: powderblue;}
-  66%  {background-color: grey;}
-  100%  {background-color: seashell;}
+@keyframes title {
+  0% {
+    background-color: green;
+  }
+  33% {
+    background-color: powderblue;
+  }
+  66% {
+    background-color: grey;
+  }
+  100% {
+    background-color: seashell;
+  }
 }
 
 .about {
   color: white;
   margin: 0em;
-  padding: .5em;
+  padding: 0.5em;
   -webkit-animation-name: about;
   animation-name: about;
   -webkit-animation-duration: 55s;
@@ -102,21 +124,28 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
   -webkit-animation-timing-function: linear;
-  animation-timing-function: linear
+  animation-timing-function: linear;
 }
- 
 
- @keyframes about{
-  0%   {background-color: green;}
-  33%  {background-color: powderblue;}
-  66%  {background-color: saddlebrown;}
-  100%  {background-color: seashell;}
+@keyframes about {
+  0% {
+    background-color: green;
+  }
+  33% {
+    background-color: powderblue;
+  }
+  66% {
+    background-color: saddlebrown;
+  }
+  100% {
+    background-color: seashell;
+  }
 }
 
 .contact {
   color: white;
   margin: 0em;
-  padding: .5em;
+  padding: 0.5em;
   -webkit-animation-name: about;
   animation-name: about;
   -webkit-animation-duration: 30s;
@@ -125,33 +154,33 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
   -webkit-animation-timing-function: linear;
-  animation-timing-function: linear
+  animation-timing-function: linear;
 }
 
 /* || projects */
- 
+
 .projects-div {
   order: 1;
-  max-width: 50%;
+  max-width: 60%;
 }
 
 details {
   border: 1px solid black;
   padding: 0.5em 0.5em 0;
-  margin:.75em;
-  width:fit-content; 
+  margin: 0.75em;
+  width: fit-content;
 }
 
 summary {
- font-family:sans-serif;
- font-weight: bold;
+  font-family: sans-serif;
+  font-weight: bold;
   margin: -0.5em -0.5em 0;
   padding: 0.5em;
 }
 
 details[open] {
   padding: 0.5em;
-  width:fit-content; 
+  width: fit-content;
 }
 
 details[open] summary {
@@ -160,6 +189,6 @@ details[open] summary {
 }
 
 .description {
-    font-family:monospace;
-    margin-bottom: 2em;
+  font-family: monospace;
+  margin-bottom: 2em;
 }
