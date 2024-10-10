@@ -16,11 +16,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: yellow;
+  background: rgba(255, 255, 0, 0.5);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 0, 0.221);}
+  background: yellow;}
 
 /* || typography */
 .subheading {
@@ -219,7 +219,7 @@ details[open] summary {
 }
 
 details[open] summary:hover {
-  background: rgba(255, 255, 0, 0.5);
+  background: 
 }
 
 .description {
