@@ -124,7 +124,7 @@ audio::-webkit-media-controls-timeline {
 }
 
 .title {
-  color: white;
+  color: rgba(0, 0, 0, 0.5);
   margin: 0em;
   padding: 0.5em;
   -webkit-animation-name: title;
@@ -196,6 +196,14 @@ audio::-webkit-media-controls-timeline {
   animation-direction: alternate;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
+}
+
+.joinlist:hover {
+  color: yellow;
+}
+
+.joinlist {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 /* || projects */
