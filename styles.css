@@ -8,19 +8,19 @@
 /* || scrollbar */
 ::-webkit-scrollbar {
   width: 0em;
-  height: .8em;
+  height: 1em;
 }
 
 ::-webkit-scrollbar-track {
-  background: #ffffff;
-}
-
-::-webkit-scrollbar-thumb {
   background: lightgrey;
 }
 
+::-webkit-scrollbar-thumb {
+  background: yellow;
+}
+
 ::-webkit-scrollbar-thumb:hover {
-  background: yellow;}
+  background: rgba(255, 255, 0, 0.221);}
 
 /* || typography */
 .subheading {
@@ -201,7 +201,12 @@ summary {
   font-weight: bold;
   margin: -0.5em -0.5em 0;
   padding: 0.5em;
+  
 }
+
+summary:hover {
+    background: rgba(255, 255, 0, 0.5);
+  }
 
 details[open] {
   padding: 0.5em;
@@ -211,6 +216,10 @@ details[open] {
 details[open] summary {
   margin-bottom: 0.5em;
   background-color: yellow
+}
+
+details[open] summary:hover {
+  background: rgba(255, 255, 0, 0.5);
 }
 
 .description {
