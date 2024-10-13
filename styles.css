@@ -16,11 +16,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: yellow;
+  background: rgba(255, 255, 0, 0.5);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 0, 0.221);}
+  background: yellow;
+}
 
 /* || typography */
 .subheading {
@@ -48,9 +49,9 @@ audio::-webkit-media-controls-timeline {
 .audiotitle {
   font-family: sans-serif;
   margin-top: 1em;
-  margin-bottom:0;
+  margin-bottom: 0;
   padding-bottom: 0;
-  font-size: .8em;
+  font-size: 0.8em;
   font-style: oblique;
   font-weight: bolder;
 }
@@ -105,10 +106,25 @@ audio::-webkit-media-controls-timeline {
   .title {
     font-size: 2em;
   }
+  .info-div {
+    order: 0;
+    position: relative;
+  }
+  .projects-div {
+    order: 1;
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects-div {
+    order: 1;
+    max-width: 50%;
+  }
 }
 
 .title {
-  color: white;
+  color: rgba(0, 0, 0, 0.5);
   margin: 0em;
   padding: 0.5em;
   -webkit-animation-name: title;
@@ -182,12 +198,15 @@ audio::-webkit-media-controls-timeline {
   animation-timing-function: linear;
 }
 
-/* || projects */
-
-.projects-div {
-  order: 1;
-  max-width: 50%;
+.joinlist:hover {
+  color: yellow;
 }
+
+.joinlist {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* || projects */
 
 details {
   border: 1px solid black;
@@ -201,12 +220,11 @@ summary {
   font-weight: bold;
   margin: -0.5em -0.5em 0;
   padding: 0.5em;
-  
 }
 
 summary:hover {
-    background: rgba(255, 255, 0, 0.5);
-  }
+  background: rgba(255, 255, 0, 0.5);
+}
 
 details[open] {
   padding: 0.5em;
@@ -215,11 +233,11 @@ details[open] {
 
 details[open] summary {
   margin-bottom: 0.5em;
-  background-color: yellow
+  background-color: yellow;
 }
 
 details[open] summary:hover {
-  background: rgba(255, 255, 0, 0.5);
+  background: ;
 }
 
 .description {
