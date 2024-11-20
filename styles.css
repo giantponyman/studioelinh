@@ -73,7 +73,7 @@ audio::-webkit-media-controls-timeline {
 /* || information*/
 .info-div {
   order: 0;
-  max-width: 30%;
+  max-width: 33%;
   top: 0.5em; /* this is required for "sticky" to work */
   position: sticky;
   position: -webkit-sticky;
@@ -109,10 +109,15 @@ audio::-webkit-media-controls-timeline {
   .info-div {
     order: 0;
     position: relative;
+    top: 0.5em; /* this is required for "sticky" to work */
+    position: sticky;
+    position: -webkit-sticky;
+    align-self: flex-start;
+    margin-bottom: 0.5em;
   }
   .projects-div {
     order: 1;
-    max-width: 70%;
+    max-width: 73%;
   }
 }
 
