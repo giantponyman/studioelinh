@@ -209,7 +209,7 @@ audio::-webkit-media-controls-timeline {
 /* || projects */
 
 details {
-  border: 1px solid black;
+  border: px solid black;
   padding: 0.5em 0.5em 0;
   margin: 0.75em;
   width: fit-content;
