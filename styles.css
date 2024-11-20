@@ -214,7 +214,6 @@ audio::-webkit-media-controls-timeline {
 /* || projects */
 
 details {
-  border: px solid black;
   padding: 0.5em 0.5em 0;
   margin: 0.75em;
   width: fit-content;
@@ -232,6 +231,7 @@ summary:hover {
 }
 
 details[open] {
+  border: 1px solid rgb(145, 145, 145);
   padding: 0.5em;
   width: fit-content;
 }
