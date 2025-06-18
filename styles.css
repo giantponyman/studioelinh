@@ -178,10 +178,10 @@ audio::-webkit-media-controls-timeline {
     background-color: green;
   }
   33% {
-    background-color: powderblue;
+    background-color: saddlebrown;
   }
   66% {
-    background-color: saddlebrown;
+    background-color: powderblue;
   }
   100% {
     background-color: seashell;
@@ -247,4 +247,21 @@ details[open] summary:hover {
 .description {
   font-family: monospace;
   margin-bottom: 2em;
+}
+
+input[type="submit"] {
+  font-family: serif;
+  color: white;
+  padding: 0.3em 0.3em;
+  background: #b6b6b6;
+  cursor: pointer;
+  -webkit-animation-name: about;
+  animation-name: about;
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
 }
