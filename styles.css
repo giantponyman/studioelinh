@@ -1,5 +1,3 @@
-
-
 /* || text */
 .body {
   display: flex;
@@ -28,8 +26,6 @@ h3 {
 a {
   color: #0066cc;
 }
-
-
 
 /* || audio */
 .audiotitle {
@@ -95,7 +91,7 @@ a {
 .about {
   color: white;
   margin: 0em;
-  padding: 0.5em;
+  padding: 0.8em;
   animation-name: about;
   animation-duration: 55s;
   animation-iteration-count: infinite;
@@ -121,7 +117,8 @@ a {
 .contact {
   color: white;
   margin: 0em;
-  padding: 0.5em;
+  line-height: 1.4em;
+  padding: 0.8em;
   animation-name: about;
   animation-duration: 30s;
   animation-iteration-count: infinite;
