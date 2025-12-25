@@ -1,10 +1,15 @@
-/* || general */
 
+
+/* || text */
 .body {
   display: flex;
   flex-flow: row wrap;
 }
-
+p {
+  font-family: serif;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+}
 h1 {
   font-family: sans-serif;
   font-weight: bold;
@@ -16,11 +21,21 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+a {
+  color: #0066cc;
+}
+
+
+
 /* || audio */
 .audiotitle {
   font-family: sans-serif;
   margin-top: 1em;
-  margin-bottom: 0;
+  margin-bottom: 0.2em;
   padding-bottom: 0;
   font-size: 0.8em;
   font-style: oblique;
@@ -32,7 +47,7 @@ h2 {
   max-width: 99%;
   max-height: 70vh;
   margin-left: 0.2em;
-  margin-right: 0.5em;
+  margin-right: 0.2em;
   overflow-x: auto;
 }
 .scroll {
@@ -41,7 +56,7 @@ h2 {
   margin-bottom: 2em;
 }
 
-/* || header*/
+/* || layout */
 .info-div {
   order: 0;
   max-width: 30%;
@@ -49,52 +64,6 @@ h2 {
   position: sticky;
   align-self: flex-start;
   margin-bottom: 0.5em;
-}
-
-@media (max-width: 900px) {
-  .about {
-    font-size: 1em;
-  }
-  .title {
-    font-size: 1.5em;
-  }
-  .contact {
-    font-size: 1em;
-  }
-  .info-div {
-    order: 0;
-    max-width: 100%;
-    position: relative;
-  }
-  .projects {
-    order: 1;
-    min-width: 100%;
-  }
-}
-
-@media (min-width: 900px) {
-  .title {
-    font-size: 2em;
-  }
-  .info-div {
-    order: 0;
-    position: relative;
-    top: 0.5em; /* this is required for "sticky" to work */
-    position: sticky;
-    align-self: flex-start;
-    margin-bottom: 0.5em;
-  }
-  .projects {
-    order: 1;
-    max-width: 70%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .projects {
-    order: 1;
-    max-width: 60%;
-  }
 }
 
 .title {
@@ -160,8 +129,54 @@ h2 {
   animation-timing-function: linear;
 }
 
-/* || project list */
+/* || responsive design */
+@media (max-width: 900px) {
+  .about {
+    font-size: 1em;
+  }
+  .title {
+    font-size: 1.5em;
+  }
+  .contact {
+    font-size: 1em;
+  }
+  .info-div {
+    order: 0;
+    max-width: 100%;
+    position: relative;
+  }
+  .projects {
+    order: 1;
+    min-width: 100%;
+  }
+}
 
+@media (min-width: 900px) {
+  .title {
+    font-size: 2em;
+  }
+  .info-div {
+    order: 0;
+    position: relative;
+    top: 0.5em; /* this is required for "sticky" to work */
+    position: sticky;
+    align-self: flex-start;
+    margin-bottom: 0.5em;
+  }
+  .projects {
+    order: 1;
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects {
+    order: 1;
+    max-width: 60%;
+  }
+}
+
+/* || project list */
 .projects-list {
   list-style: none;
   padding: 1em;
@@ -215,32 +230,18 @@ h2 {
   font-size: 0.95em;
 }
 
-.project-description {
-  font-size: 0.95em;
-  color: black;
-  font-style: italic;
+.project-link:hover .project-title {
   background-color: yellow;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
-
-.project-link:hover .project-description {
-  opacity: 1;
-}
-
-a {
-  color: #0066cc;
 }
 
 /* || project pages */
-
 .project-page {
   max-width: 1000px;
   margin: 0 auto;
   padding: 1em;
 }
-/* || gallery */
 
+/* || gallery */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -260,6 +261,8 @@ a {
 .gallery img:hover {
   opacity: 0.8;
 }
+
+/* lightbox styling */
 .lightbox {
   display: none;
   position: fixed;
@@ -285,7 +288,6 @@ a {
   pointer-events: none;
 }
 
-/* navigation buttons */
 .lightbox-nav {
   position: absolute;
   bottom: 10%;

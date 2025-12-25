@@ -35,13 +35,21 @@
     <div class="project-page">
       <h2>Stay</h2>
 
-      <img
+      <video
         class="documentation"
-        src="images/stay-1.jpg"
-        alt="Stills from video"
-      />
-
-      <p><i>Stills from video</i></p>
+        controls
+        preload="metadata"
+        playsinline
+        webkit-playsinline
+        disablePictureInPicture
+        disableRemotePlayback
+        poster="images/stay-1.jpg"
+        aria-label="Stay — video documentation"
+      >
+        <source src="video/stay.mp4" type="video/mp4" />
+        Your browser does not support the video element. You can
+        <a href="video/stay.mp4">download the video</a> instead.
+      </video>
 
       <p>
         A Jewish grandmother displaced from Tripoli, Libya, remembers a song
@@ -53,8 +61,13 @@
           >Link to view video</a
         >
       </p>
-
+      <p>Gallery</p>
       <div class="gallery">
+        <img
+          class="documentation"
+          src="images/stay-1.jpg"
+          alt="Stills from video"
+        />
         <img class="documentation" src="images/stay-7.jpg" alt="Stay 7" />
         <img class="documentation" src="images/stay-12.jpg" alt="Stay 12" />
         <img class="documentation" src="images/stay-14.jpg" alt="Stay 14" />
