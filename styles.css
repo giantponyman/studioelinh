@@ -5,47 +5,18 @@
   flex-flow: row wrap;
 }
 
-/* || scrollbar */
-::-webkit-scrollbar {
-  width: 0em;
-  height: 1em;
-}
-
-::-webkit-scrollbar-track {
-  background: lightgrey;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 0, 0.5);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: yellow;
-}
-
-/* || typography */
-.subheading {
+h1 {
   font-family: sans-serif;
   font-weight: bold;
-  margin: 0em;
+  margin: 1em;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 /* || audio */
-audio::-webkit-media-controls-panel {
-  background-color: white;
-  border-radius: 0%;
-}
-audio::-webkit-media-controls-play-button {
-  background-color: white;
-  border-radius: 0%;
-}
-audio::-webkit-media-controls-timeline {
-  background-color: white;
-  border-radius: 0;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
 .audiotitle {
   font-family: sans-serif;
   margin-top: 1em;
@@ -76,12 +47,11 @@ audio::-webkit-media-controls-timeline {
   max-width: 30%;
   top: 0.5em; /* this is required for "sticky" to work */
   position: sticky;
-  position: -webkit-sticky;
   align-self: flex-start;
   margin-bottom: 0.5em;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   .about {
     font-size: 1em;
   }
@@ -96,13 +66,13 @@ audio::-webkit-media-controls-timeline {
     max-width: 100%;
     position: relative;
   }
-  .projects-div {
+  .projects {
     order: 1;
     min-width: 100%;
   }
 }
 
-@media (min-width: 760px) {
+@media (min-width: 900px) {
   .title {
     font-size: 2em;
   }
@@ -111,18 +81,17 @@ audio::-webkit-media-controls-timeline {
     position: relative;
     top: 0.5em; /* this is required for "sticky" to work */
     position: sticky;
-    position: -webkit-sticky;
     align-self: flex-start;
     margin-bottom: 0.5em;
   }
-  .projects-div {
+  .projects {
     order: 1;
     max-width: 70%;
   }
 }
 
 @media (min-width: 1200px) {
-  .projects-div {
+  .projects {
     order: 1;
     max-width: 60%;
   }
@@ -132,14 +101,10 @@ audio::-webkit-media-controls-timeline {
   color: rgba(0, 0, 0, 0.5);
   margin: 0em;
   padding: 0.5em;
-  -webkit-animation-name: title;
   animation-name: title;
-  -webkit-animation-duration: 45s;
   animation-duration: 45s;
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
 }
 
@@ -162,14 +127,10 @@ audio::-webkit-media-controls-timeline {
   color: white;
   margin: 0em;
   padding: 0.5em;
-  -webkit-animation-name: about;
   animation-name: about;
-  -webkit-animation-duration: 55s;
   animation-duration: 55s;
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
 }
 
@@ -192,76 +153,171 @@ audio::-webkit-media-controls-timeline {
   color: white;
   margin: 0em;
   padding: 0.5em;
-  -webkit-animation-name: about;
   animation-name: about;
-  -webkit-animation-duration: 30s;
   animation-duration: 30s;
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
 }
 
-.joinlist:hover {
-  color: yellow;
-}
+/* || project list */
 
-.joinlist {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-/* || projects */
-
-details {
-  padding: 0.5em 0.5em 0;
+.projects-list {
+  list-style: none;
+  padding: 1em;
   margin: 0.75em;
-  width: fit-content;
 }
 
-summary {
-  font-family: sans-serif;
-  font-weight: bold;
-  margin: -0.5em -0.5em 0;
-  padding: 0.5em;
-}
-
-summary:hover {
-  background: rgba(255, 255, 0, 0.5);
-}
-
-details[open] {
-  border: 1px solid rgb(145, 145, 145);
-  padding: 0.5em;
-  width: fit-content;
-}
-
-details[open] summary {
-  margin-bottom: 0.5em;
-  background-color: yellow;
-}
-
-details[open] summary:hover {
-}
-
-.description {
-  font-family: monospace;
+.project-item {
   margin-bottom: 2em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1.5em;
 }
 
-input[type="submit"] {
-  font-family: serif;
-  color: white;
-  padding: 0.3em 0.3em;
-  background: #b6b6b6;
+.project-item:last-child {
+  border-bottom: none;
+}
+
+.project-link {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive thumbnails: scale with viewport while keeping consistent aspect ratio and clean cropping */
+.project-thumbnail {
+  flex: 0 0 auto; /* prevent flexbox from shrinking or growing the image box */
+  width: clamp(160px, 40vw, 600px); /* min, preferred (responsive), max */
+  aspect-ratio: 3 / 2; /* keeps consistent shape across images */
+  object-fit: cover; /* crop to fill the box cleanly */
+  border-radius: 2px;
+}
+
+.project-info {
+  flex-grow: 1;
+  min-width: 0; /* allow text to wrap/ellipsis without overflowing the flex item */
+}
+
+.project-title {
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: larger;
+  margin-bottom: 0.3em;
+  color: #000;
+}
+
+.project-medium {
+  font-family: monospace;
+  color: #000000;
+  margin-bottom: 0.5em;
+  font-size: 0.95em;
+}
+
+.project-description {
+  font-size: 0.95em;
+  color: black;
+  font-style: italic;
+  background-color: yellow;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.project-link:hover .project-description {
+  opacity: 1;
+}
+
+a {
+  color: #0066cc;
+}
+
+/* || project pages */
+
+.project-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1em;
+}
+/* || gallery */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
   cursor: pointer;
-  -webkit-animation-name: about;
-  animation-name: about;
-  -webkit-animation-duration: 30s;
-  animation-duration: 30s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
+  transition: opacity 0.2s;
+}
+
+.gallery img:hover {
+  opacity: 0.8;
+}
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  /* Ensure clicks reach the lightbox but don't close it */
+  pointer-events: none;
+}
+
+/* navigation buttons */
+.lightbox-nav {
+  position: absolute;
+  bottom: 10%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  z-index: 1010;
+  border-radius: 4px;
+  backdrop-filter: blur(2px);
+}
+
+.lightbox-nav.prev {
+  left: 1rem;
+}
+.lightbox-nav.next {
+  right: 1rem;
+}
+
+.lightbox-nav:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
 }
