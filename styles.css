@@ -46,6 +46,23 @@ a {
   margin-right: 0.2em;
   overflow-x: auto;
 }
+.document-figure {
+  float: none;
+  clear: none;
+  display: block;
+  width: min(44vw, 480px);
+  max-width: 100%;
+  height: auto;
+  margin: 0.4em auto 1em;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #fafafa;
+}
+@media (max-width: 700px) {
+  .document-figure {
+    width: min(100%, 360px);
+    margin: 0.5em auto 1em;
+  }
+}
 .scroll {
   overflow-x: auto;
   white-space: nowrap;
